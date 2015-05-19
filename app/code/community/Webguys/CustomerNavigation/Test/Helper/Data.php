@@ -16,28 +16,26 @@
  * @license    http://opensource.org/licenses/mit-license.php MIT License
 */
 
-class Webguys_CustomerNavigation_Helper_Data extends Webguys_CustomerNavigation_Helper_Core
+/**
+ * @see Webguys_CustomerNavigation_Helper_Data
+ *
+ * @loadSharedFixture shared
+ */
+
+class Webguys_CustomerNavigation_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
 {
-    /**
-     * Path for the config for extension active status
-     */
-    const CONFIG_EXTENSION_ACTIVE = 'customernavigation/general/enabled';
 
     /**
-     * Variable for if the extension is active
+     * Tests is extension active
      *
-     * @var bool
+     * @test
+     * @covers Webguys_CustomerNavigation_Helper_Data::isExtensionActive
      */
-    protected $bExtensionActive;
-
-    /**
-     * Check to see if the extension is active
-     *
-     * @return bool
-     */
-    public function isExtensionActive()
+    public function testIsExtensionActive()
     {
-        return $this->getStoreFlag(self::CONFIG_EXTENSION_ACTIVE, 'bExtensionActive');
+        $this->assertTrue(
+            Mage::helper('customernavigation')->isExtensionActive(),
+            'Extension is not active please check config'
+        );
     }
-
 }

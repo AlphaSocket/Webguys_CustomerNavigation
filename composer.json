@@ -1,0 +1,50 @@
+{
+  "name": "Ffuenf/Webguys_CustomerNavigation",
+  "license": "MIT",
+  "description": "This extension gives you the control over the customer account navigation",
+  "authors": [
+    {
+      "name": "Ingo Hillebrand",
+      "email": "ingo@webguys.de"
+    },
+    {
+      "name": "Achim Rosenhagen",
+      "email": "a.rosenhagen@ffuenf.de"
+    }
+  ],
+  "type": "magento-module",
+  "require": {
+    "aoepeople/composer-installers": "*",
+    "colinmollenhour/modman": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ],
+  "extra": {
+    "magento-root-dir": "./magento/",
+    "map": [
+      [
+        "app/code/community/Webguys/CustomerNavigation",
+        "app/code/community/Webguys/CustomerNavigation"
+      ],
+      [
+        "app/etc/modules/Webguys_CustomerNavigation.xml",
+        "app/etc/modules/Webguys_CustomerNavigation.xml"
+      ],
+      [
+        "app/locale/de_DE/Webguys_CustomerNavigation.csv",
+        "app/locale/de_DE/Webguys_CustomerNavigation.csv"
+      ],
+      [
+        "app/locale/en_US/Webguys_CustomerNavigation.csv",
+        "app/locale/en_US/Webguys_CustomerNavigation.csv"
+      ]
+    ]
+  }
+}

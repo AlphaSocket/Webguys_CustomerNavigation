@@ -1,15 +1,16 @@
 Webguys_CustomerNavigation
-==========================
+==================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Webguys_CustomerNavigation.svg)][tag]
 [![Build Status](https://img.shields.io/travis/ffuenf/Webguys_CustomerNavigation.svg)][travis]
+[![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Webguys_CustomerNavigation/badges/quality-score.png)][code_quality]
+[![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Webguys_CustomerNavigation/badges/coverage.png)][code_coverage]
 [![Code Climate](https://codeclimate.com/github/ffuenf/Webguys_CustomerNavigation/badges/gpa.svg)][codeclimate_gpa]
-[![Test Coverage](https://codeclimate.com/github/ffuenf/Webguys_CustomerNavigation/badges/coverage.svg)][codeclimate_coverage]
 
 [tag]: https://github.com/ffuenf/Webguys_CustomerNavigation
 [travis]: https://travis-ci.org/ffuenf/Webguys_CustomerNavigation
+[code_quality]: https://scrutinizer-ci.com/g/ffuenf/Webguys_CustomerNavigation
+[code_coverage]: https://scrutinizer-ci.com/g/ffuenf/Webguys_CustomerNavigation
 [codeclimate_gpa]: https://codeclimate.com/github/ffuenf/Webguys_CustomerNavigation
-[codeclimate_coverage]: https://codeclimate.com/github/ffuenf/Webguys_CustomerNavigation
-
 
 This extension gives you the control over the customer account navigation. Opens up possibilities to configure the user account menu. These include the selective showing and hiding menu items, and the ability to reorder the menu items.
 

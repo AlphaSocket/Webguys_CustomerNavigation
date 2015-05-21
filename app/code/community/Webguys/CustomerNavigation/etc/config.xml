@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Webguys_CustomerNavigation>
-            <version>0.9.1.7</version>
+            <version>0.9.1.8</version>
         </Webguys_CustomerNavigation>
     </modules>
     <global>

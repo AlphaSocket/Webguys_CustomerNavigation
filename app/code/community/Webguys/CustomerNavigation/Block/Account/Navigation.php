@@ -20,8 +20,8 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
     );
 
     /**
-    * @inheritDoc
-    */
+     * @inheritDoc
+     */
     public function getLinks()
     {
         $preLinks = $this->_links;
@@ -58,36 +58,36 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
     }
 
     /**
-    * Determine if the given link is configured to be shown.
-    *
-    * @param Varien_Object $link
-    *
-    * @return mixed
-    */
+     * Determine if the given link is configured to be shown.
+     *
+     * @param Varien_Object $link
+     *
+     * @return string
+     */
     protected function isConfiguredToShow(Varien_Object $link)
     {
         return Mage::getStoreConfig(sprintf('customernavigation/settings/show_%s', $this->getFormattedName($link)));
     }
 
     /**
-    * Get the configured position for the given link.
-    *
-    * @param Varien_Object $link
-    *
-    * @return mixed
-    */
+     * Get the configured position for the given link.
+     *
+     * @param Varien_Object $link
+     *
+     * @return string
+     */
     protected function getConfigPosition(Varien_Object $link)
     {
         return Mage::getStoreConfig(sprintf('customernavigation/reorder/position_%s', $this->getFormattedName($link)));
     }
 
     /**
-    * Determine if the given link is a "configured" link.
-    *
-    * @param Varien_Object $link
-    *
-    * @return bool
-    */
+     * Determine if the given link is a "configured" link.
+     *
+     * @param Varien_Object $link
+     *
+     * @return bool
+     */
     protected function isConfiguredLink(Varien_Object $link)
     {
         $needle = $this->getFormattedName($link);
@@ -95,12 +95,12 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
     }
 
     /**
-    * Get the formatted name e.g. my_link_name.
-    *
-    * @param Varien_Object $link
-    *
-    * @return mixed
-    */
+     * Get the formatted name e.g. my_link_name.
+     *
+     * @param Varien_Object $link
+     *
+     * @return string
+     */
     protected function getFormattedName(Varien_Object $link)
     {
         return str_replace(' ', '_', strtolower($link->getName()));

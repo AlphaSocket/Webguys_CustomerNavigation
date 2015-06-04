@@ -1,8 +1,23 @@
-<?php 
+<?php
 
+/**
+ * Webguys_CustomerNavigation extension.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Webguys
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+ */
 class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_Block_Account_Navigation
 {
-
     /** @var array */
     protected $configuredLinks = array(
         'account',
@@ -16,7 +31,7 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
         'newsletter',
         'oauth_customer_tokens',
         'downloadable_products',
-        'wishlist'
+        'wishlist',
     );
 
     /**
@@ -54,6 +69,7 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
                 $this->addLink($link->getName(), $link->getPath(), $link->getLabel());
             }
         }
+
         return $this->_links;
     }
 
@@ -91,6 +107,7 @@ class Webguys_CustomerNavigation_Block_Account_Navigation extends Mage_Customer_
     protected function isConfiguredLink(Varien_Object $link)
     {
         $needle = $this->getFormattedName($link);
+
         return (in_array($needle, $this->configuredLinks));
     }
 
